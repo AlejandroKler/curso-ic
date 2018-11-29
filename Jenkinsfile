@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
          steps {
              println 'aca va el build'
-
+             sh 'build.sh'
          }
          post{
             always{
@@ -20,11 +20,13 @@ pipeline {
         stage('Deploy') {
           steps {
               println 'aca va el deploy'
+              sh 'deploy.sh'
           }
         }
         stage('Verify') {
            steps {
                println 'aca va el verify'
+               sh 'verify.sh'
            }
            post{
                always{
