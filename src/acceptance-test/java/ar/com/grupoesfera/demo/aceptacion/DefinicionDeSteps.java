@@ -15,7 +15,7 @@ import com.grupoesfera.demo.integration.domain.Client;
 
 public class DefinicionDeSteps {
 	
-	private final static String URL = "172.17.0.5:8080/";
+	private final static String URL = "http://172.17.0.5:8080/";
 	
 	@Given("no existe el cliente {string}")
 	public void noExisteElCliente(String nombreCliente) {
